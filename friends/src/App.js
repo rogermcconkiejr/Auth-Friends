@@ -5,6 +5,8 @@ import axios from 'axios';
 
 import Login from './components/Login';
 import FriendsList from './components/FriendsList';
+import PrivateRoute from './components/PrivateRoute';
+import CreateFriend from './components/CreateFriend';
 
 function App() {
   axios
@@ -18,9 +20,11 @@ function App() {
       
       <Link to="/login">Login</Link>
       <Link to="/protected">Protected Page</Link>
+      <Link to="addfriend">Add a friend</Link>
 
        <Switch>
-         <Route exact path='/protected' component={FriendsList} />
+         <PrivateRoute exact path='/protected' component={FriendsList} />
+         <PrivateRoute exact path='/addfriend' component={CreateFriend} />
          <Route path="/login" component={Login} />
          <Route component={Login} />
        </Switch>
