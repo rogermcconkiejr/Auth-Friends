@@ -14,11 +14,11 @@ export const Login = (props) => {
         }
     
         // const handleChange = e => {
-        //     setCredentials: {
+        //     setCredentials({
         //       ...credentials,
         //       [e.target.name]: e.target.value,
         //     }
-        // }
+        // })
 
     return (
         <div className="loginWrapper">
