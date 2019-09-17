@@ -22,6 +22,8 @@ export const Login = (props) => {
 
     return (
         <div className="loginWrapper">
+
+            <h1>Login</h1>
             <form onSubmit={login}>
                 <input 
                 type="text"
