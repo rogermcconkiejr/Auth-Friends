@@ -27,6 +27,7 @@ class CreateFriend extends React.Component {
                 console.log(res);
         })
         .catch(err => console.log(err));
+
     };
   
     render() {
